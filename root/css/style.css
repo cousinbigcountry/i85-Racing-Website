@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow: hidden;
+  background: black;
+}
+/*--------COUNTDOWN----------*/
+#demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+div img {
+  height: 70px;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode-btn {
+  border: none;
+  background-color: transparent;
+}
+/*---------------------------NAV---------------------------------------*/
+
+/*---------------------------CAROUSEL---------------------------------------*/
+.carousel img {
+  height: 400px;
+}
+.carousel h3 {
+  -webkit-text-fill-color: #ffff;
+  -webkit-text-stroke-color: #b01829;
+  -webkit-text-stroke-width: 1.5px;
+  text-transform: capitalize;
+}
+.carousel p {
+  -webkit-text-fill-color: #ffff;
+  -webkit-text-stroke-color: #b01829;
+  -webkit-text-stroke-width: 0.45px;
+  text-transform: capitalize;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/* ============ small devices .end// ============ */
